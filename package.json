@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "set BROWSER=edge && vite",
+    "start": "node backend/server.js",
     "mktest": "mkdir test",
     "rmtest": "rmdir test",
     "build": "vite build",
@@ -12,8 +13,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.117.1",
     "axios": "^1.19.0",
+    "cors": "^2.8.6",
     "dayjs": "^1.11.21",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "openai": "^7.4.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "supersimpledev": "^8.6.4"
