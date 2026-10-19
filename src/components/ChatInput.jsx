@@ -150,7 +150,7 @@ export function ChatInput({ chatMessage, setChatMessages }) {
     //  ])
 
     try {
-      const response = await fetch("http://localhost:5000/chat", {
+      const response = await fetch("https://chat-app-backend-mu-sooty.vercel.app/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: messageText })
